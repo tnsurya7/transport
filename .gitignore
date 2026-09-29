@@ -11,7 +11,11 @@ dist/
 
 # Local Environment Variables & Secrets (CRITICAL: NEVER PUSH SECRETS TO GIT)
 .env
+.env.*
 .env*.local
+.env.production
+env
+*.env
 .env.development.local
 .env.test.local
 .env.production.local
