@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "track": "Track Shipment",
+    "contact": "Contact Us",
+    "getQuote": "Get Quote",
+    "call": "Call Us",
+    "whatsapp": "WhatsApp",
+    "adminPortal": "Admin Portal"
+  },
+  "hero": {
+    "badge": "Sabarisan Transport • From Erode across South India",
+    "title": "Move Anything. We'll Handle the Journey.",
+    "subtitle": "Direct goods transport and shifting services from Erode across all districts of Tamil Nadu, Karnataka & Kerala with transparent per-KM pricing.",
+    "callToAction": "Calculate Instant Estimate",
+    "supportAreas": "Service across Tamil Nadu • Karnataka • Kerala"
+  },
+  "calculator": {
+    "title": "Instant Transport Cost Calculator",
+    "step1": "1. Pickup Location",
+    "step1Placeholder": "Search city, district or pincode in TN / KA / KL (e.g. Erode)",
+    "step2": "2. Destination",
+    "step2Placeholder": "Search destination city or pincode (e.g. Coimbatore, Bengaluru, Kochi)",
+    "step3": "3. Select Transport Service",
+    "loadCapacity": "Select Load Capacity",
+    "calculateBtn": "Calculate Estimated Price",
+    "calculating": "Calculating route & price...",
+    "distance": "Road Distance",
+    "estimatedCost": "Estimated Transport Cost",
+    "ratePerKm": "Rate per KM",
+    "disclaimer": "Final price may vary based on loading, unloading, tolls, waiting time and other applicable charges.",
+    "bookNow": "Book This Transport",
+    "errorSameLocation": "Pickup and Destination cannot be the same location.",
+    "errorSelectLocations": "Please select both pickup and destination locations."
+  },
+  "bookingModal": {
+    "title": "Complete Your Booking",
+    "subtitle": "No account required. Our dispatch manager will contact you immediately.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "phone": "Mobile Number",
+    "phonePlaceholder": "10-digit mobile number",
+    "email": "Email Address",
+    "emailPlaceholder": "Your email for booking & tracking updates",
+    "notes": "Additional Instructions (Optional)",
+    "notesPlaceholder": "E.g., 2nd floor, fragile items, preferred timing",
+    "submit": "Confirm & Submit Booking",
+    "submitting": "Submitting booking...",
+    "secureNote": "Your details are secure. We only call to confirm scheduling."
+  },
+  "success": {
+    "title": "Booking Received!",
+    "bookingNo": "Booking Number",
+    "message": "We have received your transport request. Our operations team at Sabarisan Transport Erode will contact you shortly by phone or WhatsApp to confirm your vehicle assignment.",
+    "nextStep": "Once confirmed, you will receive a unique Tracking ID via email and SMS.",
+    "trackBtn": "Track Status",
+    "whatsappBtn": "WhatsApp Operations Team",
+    "close": "Done"
+  },
+  "tracking": {
+    "title": "Track Your Transport",
+    "subtitle": "Enter your Tracking ID or Booking Number to check real-time shipment status.",
+    "placeholder": "Enter Tracking ID (e.g. TRP-ERD-2026-000001) or Booking No",
+    "searchBtn": "Track Shipment",
+    "searching": "Locating shipment...",
+    "route": "Route",
+    "status": "Current Status",
+    "vehicle": "Assigned Vehicle",
+    "distance": "Distance",
+    "timeline": "Shipment Timeline",
+    "notFound": "No shipment found with this ID. Please check the ID or contact support.",
+    "statuses": {
+      "BOOKING_RECEIVED": "Booking Received",
+      "CONFIRMED": "Booking Confirmed",
+      "VEHICLE_ASSIGNED": "Vehicle Assigned",
+      "PICKUP_COMPLETED": "Pickup Completed",
+      "IN_TRANSIT": "In Transit",
+      "OUT_FOR_DELIVERY": "Out for Delivery",
+      "DELIVERED": "Delivered",
+      "CANCELLED": "Cancelled"
+    }
+  },
+  "services": {
+    "title": "Sabarisan Transport Services",
+    "subtitle": "Professional logistics solutions customized for households, offices, and commercial cargo across TN, KA & KL.",
+    "features": {
+      "ontime": "Guaranteed Timely Delivery",
+      "verified": "Verified Drivers & GPS Monitored",
+      "pricing": "Transparent Per-KM Rates",
+      "support": "Direct Phone & WhatsApp Support"
+    }
+  },
+  "contact": {
+    "title": "Contact Sabarisan Transport",
+    "subtitle": "Our central dispatch office is located in Erode, Tamil Nadu. Reach us anytime.",
+    "addressTitle": "Head Office",
+    "address": "Near Bus Stand, Bhavani Main Road, Erode, Tamil Nadu 638004",
+    "phone": "Helpline Phone",
+    "whatsapp": "WhatsApp Support",
+    "email": "Official Email",
+    "hours": "Working Hours: 24/7 Dispatch Support"
+  }
+}
