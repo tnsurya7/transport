@@ -146,8 +146,8 @@ function wrapEmailTemplate(title: string, badgeText: string, badgeColor: string,
  */
 export async function sendBookingEmails(booking: BookingEmailData) {
   const transporter = getEmailTransporter();
-  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <sabarisan5070@gmail.com>';
-  const ownerEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.OWNER_EMAIL || 'sabarisan5070@gmail.com';
+  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <no-reply@sarisantransport.in>';
+  const ownerEmail = process.env.ADMIN_NOTIFICATION_EMAIL || process.env.OWNER_EMAIL || process.env.ADMIN_EMAIL || 'admin@example.com';
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 
   // 1A. OWNER EMAIL - ENGLISH WITH FULL OPERATIONAL DETAILS
@@ -367,7 +367,7 @@ function getCustomerBookingEmailContent(booking: BookingEmailData) {
  */
 export async function sendConfirmationEmail(booking: any) {
   const transporter = getEmailTransporter();
-  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <sabarisan5070@gmail.com>';
+  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <no-reply@sarisantransport.in>';
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
   const trackLink = `${appUrl}/track?id=${encodeURIComponent(booking.trackingId)}`;
 
@@ -450,7 +450,7 @@ export async function sendDriverAssignmentEmail(booking: any, driver: any, vehic
   if (!driver?.email) return;
 
   const transporter = getEmailTransporter();
-  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <sabarisan5070@gmail.com>';
+  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <no-reply@sarisantransport.in>';
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 
   const content = `
@@ -533,7 +533,7 @@ export async function sendDriverAssignmentEmail(booking: any, driver: any, vehic
  */
 export async function sendDeliveryCompletedEmail(booking: any) {
   const transporter = getEmailTransporter();
-  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <sabarisan5070@gmail.com>';
+  const from = process.env.SMTP_FROM || process.env.EMAIL_FROM || 'Sabarisan Transport <no-reply@sarisantransport.in>';
   const finalPaid = booking.finalAmount ?? booking.estimatedAmount;
 
   const content = `

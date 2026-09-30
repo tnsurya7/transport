@@ -5,9 +5,9 @@ import { Settings, Save, CheckCircle, RefreshCw } from 'lucide-react';
 
 export default function AdminSettingsPage() {
   const [settings, setSettings] = useState<Record<string, string>>({
-    business_name: 'Erode Roadlines & Transport',
+    business_name: 'Sabarisan Transport',
     business_address: 'Near Bus Stand, Bhavani Main Road, Erode, Tamil Nadu 638004',
-    owner_email: 'owner@erodetransport.in',
+    owner_email: 'owner@example.com',
     owner_phone: '+919876543210',
     owner_whatsapp: '919876543210',
     service_areas: 'Tamil Nadu, Karnataka, Kerala',

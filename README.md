@@ -61,20 +61,20 @@ cp .env.example .env
 Key variables in `.env`:
 ```env
 PORT=3000
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/transport_db?schema=public"
+DATABASE_URL="postgresql://USER:PASSWORD@HOST/DATABASE?sslmode=require"
 JWT_SECRET="your-ultra-secure-jwt-secret-key"
-ADMIN_EMAIL="admin@erodetransport.in"
-ADMIN_PASSWORD="ErodeTransport@2026"
+ADMIN_EMAIL="admin@example.com"
+ADMIN_PASSWORD="your-admin-password"
 GOOGLE_MAPS_SERVER_API_KEY="your-google-api-key"
-EMAIL_HOST="smtp.gmail.com"
-EMAIL_USER="your-email@gmail.com"
-EMAIL_PASSWORD="your-app-password"
-OWNER_EMAIL="owner@erodetransport.in"
+SMTP_HOST="smtp.gmail.com"
+SMTP_USER="your-email@example.com"
+SMTP_PASS="your-app-password"
+OWNER_EMAIL="admin@example.com"
 ```
 
 ### 4. Database Setup & Seeding
 ```bash
-# Push Prisma schema to PostgreSQL
+# Push Prisma schema to database
 npx prisma db push
 
 # Seed Admin user, Services, Pricing Rules, Fleet, and Locations
@@ -94,13 +94,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🔐 Admin Portal Credentials (Seed Default)
+## 🔐 Admin Portal Credentials
 
 - **Login URL**: [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
-- **Email**: `admin@erodetransport.in`
-- **Password**: `ErodeTransport@2026`
+- **Email**: Defined in your `.env` (`ADMIN_EMAIL`)
+- **Password**: Defined in your `.env` (`ADMIN_PASSWORD`)
 
-*(You can change these in `.env` or in Admin Settings)*
+*(Configured securely via environment variables or in Admin Settings)*
 
 ---
 

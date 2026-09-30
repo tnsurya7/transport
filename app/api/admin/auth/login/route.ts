@@ -8,9 +8,9 @@ const LoginSchema = z.object({
   password: z.string().min(6, 'Password must be at least 6 characters'),
 });
 
-// Default seed admin credentials for immediate setup/development
-const DEFAULT_ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@erodetransport.in';
-const DEFAULT_ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'ErodeTransport@2026';
+// Fallback admin credentials from environment
+const DEFAULT_ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@sarisantransport.in';
+const DEFAULT_ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '';
 
 export async function POST(request: NextRequest) {
   const ip = request.headers.get('x-forwarded-for') || '127.0.0.1';

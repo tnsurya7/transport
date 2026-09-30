@@ -10,8 +10,8 @@ async function main() {
   // ==========================================
   // 1. SEED SUPER ADMIN
   // ==========================================
-  const adminEmail = process.env.ADMIN_EMAIL || 'sabarisan5070@gmail.com';
-  const adminPassword = process.env.ADMIN_PASSWORD || 'sabari5070';
+  const adminEmail = process.env.ADMIN_EMAIL || 'admin@sarisantransport.in';
+  const adminPassword = process.env.ADMIN_PASSWORD || 'Admin@202';
   const salt = await bcrypt.genSalt(10);
   const passwordHash = await bcrypt.hash(adminPassword, salt);
 
@@ -202,11 +202,11 @@ async function main() {
   // 5. SEED CUSTOMERS
   // ==========================================
   const customersData = [
-    { name: 'Surya Kumar', phone: '9876543210', email: 'suryakumar@example.com' },
-    { name: 'Anand Natarajan', phone: '9842155432', email: 'anand.textiles@erode.in' },
-    { name: 'Kavitha Srinivasan', phone: '9789012345', email: 'kavitha.s@gmail.com' },
-    { name: 'Vignesh Balakrishnan', phone: '9443218765', email: 'vignesh.b@outlook.com' },
-    { name: 'Lakshmi Priya', phone: '9894011223', email: 'lakshmi.p@yahoo.com' },
+    { name: 'Surya Kumar', phone: '9876543210', email: 'customer1@example.com' },
+    { name: 'Anand Natarajan', phone: '9842155432', email: 'customer2@example.com' },
+    { name: 'Kavitha Srinivasan', phone: '9789012345', email: 'customer3@example.com' },
+    { name: 'Vignesh Balakrishnan', phone: '9443218765', email: 'customer4@example.com' },
+    { name: 'Lakshmi Priya', phone: '9894011223', email: 'customer5@example.com' },
   ];
 
   const seededCustomers: any[] = [];
@@ -494,7 +494,7 @@ async function main() {
   const settingsData = [
     { key: 'business_name', value: process.env.BUSINESS_NAME || 'Sabarisan Transport', description: 'Official Registered Business Name' },
     { key: 'business_address', value: process.env.BUSINESS_ADDRESS || 'Near Bus Stand, Bhavani Main Road, Erode, Tamil Nadu 638004', description: 'Central Headquarters & Yard Address' },
-    { key: 'owner_email', value: process.env.OWNER_EMAIL || process.env.ADMIN_EMAIL || 'sabarisan5070@gmail.com', description: 'Primary Owner Notification Email' },
+    { key: 'owner_email', value: process.env.OWNER_EMAIL || process.env.ADMIN_EMAIL || 'owner@sarisantransport.in', description: 'Primary Owner Notification Email' },
     { key: 'owner_phone', value: process.env.OWNER_PHONE || '+919876543210', description: '24/7 Helpline Phone Number' },
     { key: 'owner_whatsapp', value: process.env.OWNER_WHATSAPP || '919876543210', description: 'Official WhatsApp Business Number' },
     { key: 'service_areas', value: 'Tamil Nadu (All 38 Districts), Karnataka (All 31 Districts), Kerala (All 14 Districts)', description: 'Operational Geographic Coverage' },

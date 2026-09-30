@@ -147,7 +147,7 @@ let inMemoryVehicles: any[] = [
 let inMemorySettings: Record<string, string> = {
   business_name: 'Sabarisan Transport',
   business_address: 'Near Bus Stand, Bhavani Main Road, Erode, Tamil Nadu 638004',
-  owner_email: 'owner@erodetransport.in',
+  owner_email: process.env.OWNER_EMAIL || 'owner@example.com',
   owner_phone: '+919876543210',
   owner_whatsapp: '919876543210',
   service_areas: 'Tamil Nadu, Karnataka, Kerala',
